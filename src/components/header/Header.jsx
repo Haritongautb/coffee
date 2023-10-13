@@ -45,7 +45,7 @@ export const Header = () => {
                                     variants={returnBlockAnimation("YHasCustom")}
                                 >
                                     <NavLink
-                                        to="/"
+                                        to="/coffee"
                                         style={onActiveLink}
                                     >
                                         <div className="d-flex align-items-end">
