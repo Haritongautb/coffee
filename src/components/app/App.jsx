@@ -26,7 +26,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/coffee" element={<MainLayout />}>
-          <Route index element={<Home status={bestCoffee.statusLoading} data={bestCoffee.data} />} />
+          <Route exact path="/coffee" element={<Home status={bestCoffee.statusLoading} data={bestCoffee.data} />} />
           <Route path="/ourCoffee" element={<Coffee Component={OurCoffee} status={coffeeData.statusLoading} data={coffeeData.data} />} />
           <Route path="/ourCoffee/:idCoffee" element={<Coffee Component={SingleCoffeePage} />} />
           <Route path="/forYourPleasure" element={<ForYourPleasure status={coffeeData.statusLoading} data={coffeeData.data} />} />
