@@ -25,7 +25,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<MainLayout />}>
+        <Route exact path="/coffee" element={<MainLayout />}>
           <Route index element={<Home status={bestCoffee.statusLoading} data={bestCoffee.data} />} />
           <Route path="/ourCoffee" element={<Coffee Component={OurCoffee} status={coffeeData.statusLoading} data={coffeeData.data} />} />
           <Route path="/ourCoffee/:idCoffee" element={<Coffee Component={SingleCoffeePage} />} />
