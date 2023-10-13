@@ -1,8 +1,7 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import { useGetBack } from "../../hooks/useGetBack";
 
-export const NotFound = ({ title }) => {
+export const NotFound = () => {
     const { handleNavigate } = useGetBack();
 
     React.useEffect(() => {
@@ -18,24 +17,13 @@ export const NotFound = ({ title }) => {
     }, [])
 
     return (
-        <>
-            <Helmet>
-                <meta name="description"
-                    content={title} />
-                <title>
-                    {
-                        title
-                    }
-                </title>
-            </Helmet>
-            <div className="error-block">
-                <h1 className="error-block__title">
-                    Error
-                </h1>
-                <p className="error-block__text">Unfortunately this page is missing</p>
-                <button type="button" className="col-3 offset-4 col-md-2 offset-md-5 btn btn-warning" onClick={handleNavigate}>Get back</button>
-            </div>
-        </>
+        <div className="error-block">
+            <h1 className="error-block__title">
+                Error
+            </h1>
+            <p className="error-block__text">Unfortunately this page is missing</p>
+            <button type="button" className="col-3 offset-4 col-md-2 offset-md-5 btn btn-warning" onClick={handleNavigate}>Get back</button>
+        </div>
 
     )
 }

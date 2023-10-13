@@ -1,7 +1,7 @@
 import { Main } from "../../components/main/Main";
 import { Hero } from "../../components/hero/Hero";
 
-export const Coffee = ({ Component, title, data, status }) => {
+export const Coffee = ({ Component, data, status }) => {
     return (
         <Main>
             <Hero heroBackground="our-coffee">
@@ -9,7 +9,7 @@ export const Coffee = ({ Component, title, data, status }) => {
                     Our Coffee
                 </h1>
             </Hero>
-            <Component status={status} data={data} title={title} />
+            <Component status={status} data={data} />
         </Main>
     )
 }
