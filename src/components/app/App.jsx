@@ -1,6 +1,6 @@
 import React from "react";
 import { useHttp } from "../../hooks/useHttp";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { MainLayout } from "../../layouts/main-layout/MainLayout";
 import { Home } from "../../pages/home/Home";
 import { OurCoffee } from "../../pages/our-coffee/OurCofee";
@@ -23,15 +23,17 @@ function App() {
   }, [])
 
   return (
-    <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<Home status={bestCoffee.statusLoading} data={bestCoffee.data} />} />
-        <Route path="/ourCoffee" element={<Coffee Component={OurCoffee} status={coffeeData.statusLoading} data={coffeeData.data} />} />
-        <Route path="/ourCoffee/:idCoffee" element={<Coffee Component={SingleCoffeePage} />} />
-        <Route path="/forYourPleasure" element={<ForYourPleasure status={coffeeData.statusLoading} data={coffeeData.data} />} />
-        <Route path="*" element={<NotFound />} />
-      </Route>
-    </Routes>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Home status={bestCoffee.statusLoading} data={bestCoffee.data} />} />
+          <Route path="/ourCoffee" element={<Coffee Component={OurCoffee} status={coffeeData.statusLoading} data={coffeeData.data} />} />
+          <Route path="/ourCoffee/:idCoffee" element={<Coffee Component={SingleCoffeePage} />} />
+          <Route path="/forYourPleasure" element={<ForYourPleasure status={coffeeData.statusLoading} data={coffeeData.data} />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
