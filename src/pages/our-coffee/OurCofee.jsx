@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import { CoffeeIconComponent } from "../../components/coffee-icon-component/CoffeeIconComponent";
 import { Products } from "../../components/products/Products";
 import { ProductsList } from "../../components/products-list/ProductsList";
@@ -7,7 +8,7 @@ import girl from "../../assets/images/ourCoffee/girl.jpg";
 import buttonsData from "../../assets/data/buttonsData";
 import { returnBlockAnimation } from "../../assets/data/animations/animationObjects";
 
-export const OurCoffee = ({ status, data }) => {
+export const OurCoffee = ({ title, status, data }) => {
     const [filter, setFilter] = React.useState();
     const [search, setSearch] = React.useState("");
     const isFirstRender = React.useRef(true);
@@ -28,6 +29,15 @@ export const OurCoffee = ({ status, data }) => {
 
     return (
         <>
+            <Helmet>
+                <meta name="description"
+                    content={title} />
+                <title>
+                    {
+                        title
+                    }
+                </title>
+            </Helmet>
             <motion.section
                 initial="hidden"
                 whileInView="visible"

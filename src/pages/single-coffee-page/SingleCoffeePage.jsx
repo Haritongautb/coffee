@@ -29,10 +29,10 @@ export const SingleCoffeePage = () => {
         <>
             <Helmet>
                 <meta name="description"
-                    content={data.cardName} />
+                    content={statusLoading === "idle" || statusLoading === "loading" ? null : data.cardName} />
                 <title>
                     {
-                        data.cardName
+                        statusLoading === "idle" || statusLoading === "loading" ? null : data.cardName
                     }
                 </title>
             </Helmet>

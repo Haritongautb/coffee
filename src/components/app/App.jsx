@@ -27,7 +27,7 @@ function App() {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home status={bestCoffee.statusLoading} data={bestCoffee.data} />} />
         <Route path="/ourCoffee" element={<Coffee Component={OurCoffee} status={coffeeData.statusLoading} data={coffeeData.data} />} />
-        <Route path="/ourCoffee/:idCoffee" element={<Coffee Component={SingleCoffeePage} title="The Coffee AROMISTICO" />} />
+        <Route path="/ourCoffee/:idCoffee" element={<Coffee Component={SingleCoffeePage} title="Coffee products" />} />
         <Route path="/forYourPleasure" element={<ForYourPleasure status={coffeeData.statusLoading} data={coffeeData.data} />} />
       </Route>
       <Route path="*" element={<NotFound title="Error" />} />
