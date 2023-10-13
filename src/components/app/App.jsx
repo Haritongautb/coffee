@@ -30,7 +30,6 @@ function App() {
         <Route path="/ourCoffee/:idCoffee" element={<Coffee Component={SingleCoffeePage} title="The Coffee AROMISTICO" />} />
         <Route path="/forYourPleasure" element={<ForYourPleasure status={coffeeData.statusLoading} data={coffeeData.data} />} />
       </Route>
-      <Route path="*" element={<NotFound title="Error" />} />
     </Routes>
   );
 }
