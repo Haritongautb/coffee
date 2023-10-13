@@ -1,0 +1,17 @@
+@import "../../scss/vars.scss";
+
+.coffee-icon-component{
+    gap: 25px;
+    &__stick{
+        display: block;
+        width: 60px;
+        height: 1px;
+
+        &.dark{
+            background-color: $main-color-2;
+        }
+        &.light{
+            background-color: $main-color-1;
+        }
+    }
+}
