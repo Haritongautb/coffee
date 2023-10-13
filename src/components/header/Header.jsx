@@ -46,7 +46,6 @@ export const Header = () => {
                                 >
                                     <NavLink
                                         to="/"
-                                        end
                                         style={onActiveLink}
                                     >
                                         <div className="d-flex align-items-end">
@@ -74,7 +73,6 @@ export const Header = () => {
                                 >
                                     <NavLink
                                         to="/forYourPleasure"
-                                        end
                                         style={onActiveLink}>
                                         For your pleasure
                                     </NavLink>
