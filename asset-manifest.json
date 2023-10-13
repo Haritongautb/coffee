@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/coffee/static/css/main.515fb693.css",
+    "main.js": "/coffee/static/js/main.f529ae27.js",
+    "static/media/home-paper-back.png": "/coffee/static/media/home-paper-back.a2e6a8ffc0860c5c04cf.png",
+    "static/media/home-hero-back.png": "/coffee/static/media/home-hero-back.c2530b8ad04f33cbdd5f.png",
+    "static/media/for-your-pleasure-hero-back.png": "/coffee/static/media/for-your-pleasure-hero-back.e21ef2bf9297611b5d7e.png",
+    "static/media/our-coffee-hero-back.png": "/coffee/static/media/our-coffee-hero-back.7d2997f7c2d8d0ee1f68.png",
+    "static/media/coffee-image.jpg": "/coffee/static/media/coffee-image.b86b7d2dd3b69e3b2a0c.jpg",
+    "static/media/girl.jpg": "/coffee/static/media/girl.fafe682afc07cd62ba20.jpg",
+    "static/media/coffee-cup.png": "/coffee/static/media/coffee-cup.861039a4ef1c2a8b9ad5.png",
+    "static/media/1.png": "/coffee/static/media/1.1be4096680a98e0fa764.png",
+    "index.html": "/coffee/index.html",
+    "main.515fb693.css.map": "/coffee/static/css/main.515fb693.css.map",
+    "main.f529ae27.js.map": "/coffee/static/js/main.f529ae27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.515fb693.css",
+    "static/js/main.f529ae27.js"
+  ]
+}
