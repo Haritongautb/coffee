@@ -10,7 +10,7 @@ export const ProductsCard = ({ cardSrc, cardAlt, cardName, cardPrice, cardCountr
             viewport={{ once: true }}
             variants={productsCardAnimation}
             className={!!cardCountry ? `card ${!!cardCountry ? "not-home" : "home"} col-md-3` : `card ${!!cardCountry ? "not-home" : "home"}`}>
-            <Link to={`ourCoffee/${id}`}>
+            <Link to={`/ourCoffee/${id}`}>
                 <div className="card__wrapper d-flex flex-column align-items-center">
                     <div className="card__photo">
                         <img className="card__img" src={cardSrc} alt={cardAlt} />

@@ -47,7 +47,7 @@ export const Footer = () => {
                                 custom={2}
                                 variants={footerLinksAnimation}
                             >
-                                <Link to="ourCoffee">
+                                <Link to="/ourCoffee">
                                     Our coffee
                                 </Link>
                             </motion.div>
@@ -55,7 +55,7 @@ export const Footer = () => {
                                 custom={3}
                                 variants={footerLinksAnimation}
                             >
-                                <Link to="forYourPleasure">
+                                <Link to="/forYourPleasure">
                                     For your pleasure
                                 </Link>
                             </motion.div>
