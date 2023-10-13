@@ -14,7 +14,7 @@ function App() {
   const coffeeData = useHttp();
   const bestCoffee = useHttp();
 
-  console.log(bestCoffee);
+  console.log("update");
   React.useEffect(() => {
     (async () => {
       await coffeeData.request("https://6501d205736d26322f5c5699.mockapi.io/coffeeData");
