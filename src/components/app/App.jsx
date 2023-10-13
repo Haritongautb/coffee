@@ -14,7 +14,7 @@ function App() {
   const coffeeData = useHttp();
   const bestCoffee = useHttp();
 
-  console.log("new updated");
+  console.log("lst update");
   React.useEffect(() => {
     (async () => {
       await coffeeData.request("https://6501d205736d26322f5c5699.mockapi.io/coffeeData");
@@ -25,7 +25,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<MainLayout />}>
+        <Route exact path="/" element={<MainLayout />}>
           <Route index element={<Home status={bestCoffee.statusLoading} data={bestCoffee.data} />} />
           <Route path="/ourCoffee" element={<Coffee Component={OurCoffee} status={coffeeData.statusLoading} data={coffeeData.data} />} />
           <Route path="/ourCoffee/:idCoffee" element={<Coffee Component={SingleCoffeePage} />} />

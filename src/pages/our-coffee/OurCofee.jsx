@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import { CoffeeIconComponent } from "../../components/coffee-icon-component/CoffeeIconComponent";
 import { Products } from "../../components/products/Products";
 import { ProductsList } from "../../components/products-list/ProductsList";
@@ -28,6 +29,13 @@ export const OurCoffee = ({ status, data }) => {
 
     return (
         <>
+            <Helmet>
+                <meta
+                    name="description"
+                    content="Coffee shop products"
+                />
+                <title>Coffee shop products</title>
+            </Helmet>
             <motion.section
                 initial="hidden"
                 whileInView="visible"
