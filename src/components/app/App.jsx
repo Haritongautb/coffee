@@ -7,7 +7,7 @@ import { OurCoffee } from "../../pages/our-coffee/OurCofee";
 import { SingleCoffeePage } from "../../pages/single-coffee-page/SingleCoffeePage";
 import { Coffee } from "../../layouts/coffee/Coffee";
 import { ForYourPleasure } from "../../pages/for-your-pleasure/ForYourPleasure";
-import { NotFound } from "../../pages/not-found/NotFound";
+import { Page404 } from "../../pages/not-found/Page404";
 import "./app.scss";
 
 function App() {
@@ -26,11 +26,11 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          <Route path="" element={<Home status={bestCoffee.statusLoading} data={bestCoffee.data} />} />
+          <Route exact path="/" element={<Home status={bestCoffee.statusLoading} data={bestCoffee.data} />} />
           <Route path="/ourCoffee" element={<Coffee Component={OurCoffee} status={coffeeData.statusLoading} data={coffeeData.data} />} />
           <Route path="/ourCoffee/:idCoffee" element={<Coffee Component={SingleCoffeePage} />} />
           <Route path="/forYourPleasure" element={<ForYourPleasure status={coffeeData.statusLoading} data={coffeeData.data} />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Page404 />} />
         </Route>
       </Routes>
     </Router>

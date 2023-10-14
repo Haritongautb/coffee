@@ -1,10 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import { Main } from "../../components/main/Main";
-import { useGetBack } from "../../hooks/useGetBack";
 
-export const NotFound = () => {
-    const { handleNavigate } = useGetBack();
+export const Page404 = () => {
 
     React.useEffect(() => {
         document.body.style.cssText = `
@@ -33,7 +32,7 @@ export const NotFound = () => {
                         Error
                     </h1>
                     <p className="error-block__text">Unfortunately this page is missing</p>
-                    <button type="button" className="col-3 offset-4 col-md-2 offset-md-5 btn btn-warning" onClick={handleNavigate}>Get back</button>
+                    <Link className="col-3 offset-4 col-md-2 offset-md-5 btn btn-warning" to="/">Get back</Link>
                 </div>
             </Main>
         </>
