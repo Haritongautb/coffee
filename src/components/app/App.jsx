@@ -30,7 +30,7 @@ function App() {
           <Route path="/ourCoffee" element={<Coffee Component={OurCoffee} status={coffeeData.statusLoading} data={coffeeData.data} />} />
           <Route path="/ourCoffee/:idCoffee" element={<Coffee Component={SingleCoffeePage} />} />
           <Route path="/forYourPleasure" element={<ForYourPleasure status={coffeeData.statusLoading} data={coffeeData.data} />} />
-          <Route path="*" element={<Page404 />} />
+          <Route path="/*" element={<Page404 />} />
         </Route>
       </Routes>
     </Router>
