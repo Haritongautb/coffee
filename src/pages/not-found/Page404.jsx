@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { Main } from "../../components/main/Main";
 
 export const Page404 = () => {
-
     React.useEffect(() => {
         document.body.style.cssText = `
             display: flex;
