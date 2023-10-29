@@ -61,7 +61,7 @@ export const Header = () => {
                                     variants={returnBlockAnimation("YHasCustom")}
                                 >
                                     <NavLink
-                                        to="/ourCoffee"
+                                        to="ourCoffee"
                                         end
                                         style={onActiveLink}>
                                         Our coffee
@@ -72,7 +72,7 @@ export const Header = () => {
                                     variants={returnBlockAnimation("YHasCustom")}
                                 >
                                     <NavLink
-                                        to="/forYourPleasure"
+                                        to="forYourPleasure"
                                         style={onActiveLink}>
                                         For your pleasure
                                     </NavLink>
